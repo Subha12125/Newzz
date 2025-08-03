@@ -74,7 +74,8 @@ const apiKey = "YOUR_API_KEY";
 
 *(Add screenshots or a GIF demo here)*
 
----
+<img width="1301" height="599" alt="Screenshot 2025-08-03 221750" src="https://github.com/user-attachments/assets/1dfcdef0-2113-48ec-9ae6-a443e0b76113" />
+
 
 ## ✨ Future Enhancements
 
