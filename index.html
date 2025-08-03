@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newzz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray dark:text-white">
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Newzz</a>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                    <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400">World</a>
+                    <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400">Politics</a>
+                    <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400">Tech</a>
+                    <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400">Sports</a>
+                    <input type="text" id="search-input" placeholder="Search..."
+                        class="px-4 py-1.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600">
+                    <button id="search-btn"
+                        class="ml-2 px-4 py-1.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500">Search</button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="flex hidden md:hidden px-5 pb-4">
+            <div class="mt-2 flex">
+                <input type="text" placeholder="Search..." class="w-full px-3 py-2 border rounded-l-md">
+                <button class="px-5 bg-indigo-600 text-white rounded-r-md">Go</button>
+            </div>
+            <a href="#" class="block py-2">Home</a>
+            <a href="#" class="block py-2">World</a>
+            <a href="#" class="block py-2">Politics</a>
+            <a href="#" class="block py-2">Tech</a>
+            <a href="#" class="block py-2">Sports</a>
+        </div>
+
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
