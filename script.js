@@ -22,8 +22,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     async function fetchNews(query = "breaking") {
-        const apiKey = "197bc47d4b0f472e82848b456e8aff3a";
-        const url = `https://newsapi.org/v2/everything?q=${query}&pageSize=6&apiKey=${apiKey}`;
+        
+        const url = `/api/news?q=${encodeURIComponent(query)}`;
         try {
             const res = await fetch(url);
             const data = await res.json();
